@@ -1,0 +1,36 @@
+<div  class="container" >
+    
+<h1>Home</h1>
+    
+    <div class="col-sm-3" ng-repeat="elUsuario in listaUsuarios">
+
+    <div>
+        <h1>Usuario: {{$index+1}}</h1>
+        <img ng-src="{{elUsuario.imagen}}" width="150px" height="150px">
+        <h1>{{elUsuario.apellido}} - {{elUsuario.nombre}} </h1>
+        <ul>
+            <li>Correo: {{elUsuario.correo}}</li>
+            <li>Correo: {{elUsuario.fecha}}</li>
+        </ul>
+
+        <li><a class="btn btn-primary" ng-href="#/editarusuario/{{elUsuario.id}}">Editar Usuarios</a></li>
+       
+    </div>
+        <br>
+        <button ng-click="eliminarUsuario(elUsuario.id)" class="btn btn-danger">Eliminar Usuario</button>
+
+</div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

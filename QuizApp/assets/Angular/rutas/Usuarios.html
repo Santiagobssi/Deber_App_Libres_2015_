@@ -1,0 +1,116 @@
+<h1>Usuarios</h1>
+
+<h1>Fila 1</h1>
+<div class="row">
+    <div class="col-xs-1" style="background-color:red;">
+        1
+    </div>
+    <div class="col-xs-1" style="background-color:blue;">
+        1
+    </div>
+    <div class="col-xs-1" style="background-color:red;">
+        1
+    </div>
+    <div class="col-xs-1" style="background-color:blue;">
+        1
+    </div>
+    <div class="col-xs-1" style="background-color:red;">
+        1
+    </div>
+    <div class="col-xs-1" style="background-color:blue;">
+        1
+    </div>
+    <div class="col-xs-1" style="background-color:red;">
+        1
+    </div>
+    <div class="col-xs-1" style="background-color:blue;">
+        1
+    </div>
+    <div class="col-xs-1" style="background-color:red;">
+        1
+    </div>
+    <div class="col-xs-1" style="background-color:blue;">
+        1
+    </div>
+    <div class="col-xs-1" style="background-color:red;">
+        1
+    </div>
+    <div class="col-xs-1" style="background-color:blue;">
+        1
+    </div>
+    
+
+</div>
+
+<h1>Fila 2</h1>
+<div class="row">
+    <div class="col-sm-4" style="background-color:red;">
+<!--        CONTENEDOR IZQUIERDO-->
+        <h2>Contenedor izquierdo</h2>
+    </div>
+    <div class="col-sm-4" style="background-color:aliceblue;">
+<!--       EMPIEZA EL CONTENEDOR DE LA MITAD-->
+        <form ng-submit="agregarUsuario()">
+            
+            
+<h2>Crear Usuarios</h2>
+            <h1>{{apellido}} -{{nombre}}</h1>
+            <img ng-src="{{imagen}}" width="150px" height="150px">
+            <ul>
+                <li>{{correo}}</li>
+                <li>{{fecha | date:'fullDate'}}</li>
+            </ul>
+            
+            
+
+    <div class="form-group">
+        <label for="nombreUsuario">Nombre:</label>
+        <input ng-model="nombre" type="text" class="form-control" id="nombreUsuario" placeholder="Ingrese su Nombre">
+    </div>
+        
+    <div class="form-group">
+        <label for="apellidoUsuario">Apellido:</label>
+        <input ng-model="apellido" type="text" class="form-control" id="apellidoUsuario" placeholder="Ingrese su Apellido">
+    </div>
+    <div class="form-group">
+        <label for="correoUsuario">Correo:</label>
+        <input ng-model="correo" type="email" class="form-control" id="correoUsuario" placeholder="Ingrese su correo">
+    </div>
+    <div class="form-group">
+        <label for="passwordUsuario">Password:</label>
+        <input ng-model="password" type="password" class="form-control" id="passwordUsuario" placeholder="Ingrese su Password">
+    </div>
+    <div class="form-group">
+        <label for="fechaNacUsuario">Fecha de Nacimiento:</label>
+        <input ng-model="fecha" type="date" class="form-control" id="fechaNacUsuario" placeholder="Fecha de Nacimiento">
+    </div>
+            
+            <div class="form-group">
+        <label for="fechaNacUsuario">Imagen:</label>
+        <input ng-model="imagen" type="text" class="form-control" id="fechaNacUsuario" placeholder="Imagen Usuario">
+    </div>
+            
+            
+    
+    <button type="submit" class="btn btn-primary">Registrar Nuevo Usuario</button>
+</form>
+<!--        TERMINA EL CONTENEDOR DE LA MITAD-->
+    </div>
+    <div class="col-sm-4" style="background-color:red;">
+        <!--        CONTENEDOR IZQUIERDO-->
+        <h2>Contenedor derecho</h2>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
